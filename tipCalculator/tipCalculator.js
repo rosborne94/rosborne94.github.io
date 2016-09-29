@@ -23,14 +23,6 @@ $('#tip').text(tip);
 var total = (parseInt(billAmount) + parseInt(tip))/ numPeople;
 $('#total').text(total);
   }
-function clear(){
-  $("#bill").val(" ");
-  $('#service').val(" ");
-  $('#people').val(" ");
-  $('#tip').text(" ");
-
-
-}
 
 $(function (){ 
  $('#calculate').on("click", function() {
