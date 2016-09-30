@@ -11,7 +11,7 @@
 function calculate(){
   var billAmount = $("#bill").val();
   var serviceQuality = $('#service').val();
-  var numPeople = $('#people').val();
+  var numPeople = $('#people').val(" ");
   if (billAmount == "" || serviceQuality == 0){
    window.alert("Please enter values");
     return;

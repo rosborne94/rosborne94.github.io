@@ -70,24 +70,24 @@ function lookupWeatherForPostalCode_Click() {
 }
 
 // Card generation
-function generateCard(personInfo) {
+function generateCard(locationInfo) {
     // Insert the original HTML into a string by reading from the div. I wrote the HTML first, tested it looked right, 
     // then grabbed it as a string by asking jQuery to go get me the HTML from the DOM.
     var template = $("#templateDiv").html(); // gets the html from inside the templateDiv div
 
     // Swap out the values.
-    template = template.replace("@@NAME@@", personInfo.name);
-    template = template.replace("@@TEMP@@", personInfo.temp);
-    template = template.replace("@@MIN@@", personInfo.min);
-    template = template.replace("@@HIGH@@", personInfo.high);
-    template = template.replace("@@RAINCHANCE@@", personInfo.rainchance);
-    template = template.replace("@@CURRSUMMARY@@", personInfo.currsummary);
+    template = template.replace("@@NAME@@", locationInfo.name);
+    template = template.replace("@@TEMP@@", locationInfo.temp);
+    template = template.replace("@@MIN@@", locationInfo.min);
+    template = template.replace("@@HIGH@@", locationInfo.high);
+    template = template.replace("@@RAINCHANCE@@", locationInfo.rainchance);
+    template = template.replace("@@CURRSUMMARY@@", locationInfo.currsummary);
 
     // Return the new HTML.
     return template;
 }
 
-function testGenerateCard() {
+function dataGenerateCard() {
     var sampleData = {
         name: locations,
         temp: currentTemp,
