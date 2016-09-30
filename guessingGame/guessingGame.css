@@ -90,3 +90,12 @@ html body{
 :-ms-input-placeholder {  
    color:black;  
 }
+.correct{
+    background-color: green;
+}
+.wrong{
+    background-color: red;
+}
+.close{
+    background-color: yellow;
+}
