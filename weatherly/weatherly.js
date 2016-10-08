@@ -87,7 +87,7 @@ function generateCard(locationInfo) {
     return template;
 }
 
-function dataGenerateCard() {
+function testGenerateCard() {
     var sampleData = {
         name: locations,
         temp: currentTemp,
