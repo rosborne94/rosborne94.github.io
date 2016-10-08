@@ -10,8 +10,8 @@
 }
 function calculate(){
   var billAmount = $("#bill").val();
-  var serviceQuality = $('#service').val();
-  var numPeople = $('#people').val(" ");
+  var serviceQuality = $("#service").val();
+  var numPeople = $("#people").val();
   if (billAmount == "" || serviceQuality == 0){
    window.alert("Please enter values");
     return;
@@ -19,9 +19,9 @@ function calculate(){
   var tip = (billAmount * serviceQuality)/ numPeople;
   tip = Math.round(tip * 100) / 100;
   tip = tip.toFixed(2);
-$('#tip').text(tip);
+$("#tip").text(tip);
 var total = (parseInt(billAmount) + parseInt(tip))/ numPeople;
-$('#total').text(total);
+$("#total").text(total);
   }
 
 $(function (){ 
